@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Total Pembelian Pelanggan</title>
+</head>
+<body>
+    <script>
+        let hargaBarang = 10000; 
+        let jumlahBarang = 55;   
+        const batasDiskon = 50;       
+        const persentaseDiskon = 0.10;
+        let totalHarga = hargaBarang * jumlahBarang;
+        let diskon = 0;
+        if (jumlahBarang > batasDiskon) {
+            diskon = totalHarga * persentaseDiskon;
+        }
+        let hargaSetelahDiskon = totalHarga - diskon;
+        console.log("Harga keseluruhan tanpa diskon: Rp" + totalHarga);
+        console.log("Diskon yang diberikan: Rp" + diskon);
+        console.log("Harga setelah diskon: Rp" + hargaSetelahDiskon);
+    </script>
+</body>
+</html>
