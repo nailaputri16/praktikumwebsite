@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pengecekan Membership Restoran</title>
+</head>
+<body>
+    <script>
+        // Data pelanggan
+        let pelanggan = [
+            { nama: "Lena", membership: true },
+            { nama: "Rio", membership: false }
+        ];
+        function cekDiskon(pelanggan) {
+            if (pelanggan.membership) {
+                console.log(pelanggan.nama + " Mendapatkan diskon 5%");
+            } else {
+                console.log(pelanggan.nama + " Tidak mendapatkan diskon");
+            }
+        }
+        for (let i = 0; i < pelanggan.length; i++) {
+            cekDiskon(pelanggan[i]);
+        }
+    </script>
+</body>
+</html>
