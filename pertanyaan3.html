@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bonus Salon Pelanggan</title>
+</head>
+<body>
+    <script>
+        let totalKunjungan = 15; 
+
+        const kunjunganUntukBonus = 10; 
+        let sisaKunjungan = totalKunjungan % kunjunganUntukBonus; 
+        let bonus = Math.floor(totalKunjungan / kunjunganUntukBonus);
+
+        console.log("Total kunjungan: " + totalKunjungan);
+        console.log("Total potongan kupon yang dimiliki: " + sisaKunjungan);
+
+        if (bonus > 0) {
+            console.log("Anda sudah mendapatkan " + bonus + " kali kunjungan gratis!");
+        } else {
+            console.log("Anda belum mendapatkan kunjungan gratis.");
+        }
+    </script>
+</body>
+</html>
