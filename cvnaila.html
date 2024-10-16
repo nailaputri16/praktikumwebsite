@@ -12,7 +12,8 @@
             background-color: #082640;
         }
         .container {
-            width: 900px;
+            width: 90%; 
+            max-width: 900px; 
             margin: 20px auto;
             background-color: white;
             padding: 20px;
@@ -34,12 +35,10 @@
         .header h1 {
             margin: 0;
             font-size: 28px;
-            text-align: center;
         }
         .header p {
             margin: 0;
             font-size: 20px;
-            text-align: center;
         }
         .bio-section, .profile-section, .education-section, .work-experience-section, .portfolio-section, .skills-section, .preferences-section {
             margin-bottom: 5px;
@@ -55,7 +54,6 @@
             border-bottom: 2px solid #770185;
             padding-bottom: 5px;
             margin-bottom: 10px;
-
         }
         .profile-section p {
             line-height: 1.6;
@@ -137,6 +135,26 @@
             margin: 0;
             text-align: center;
         }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .sidebar, .main-content {
+                width: 100%;    
+                float: none;
+            }
+            .bio-section, .skills-section, .preferences-section {
+                max-width: 100%;    
+            }
+            .header img {
+                width: 100px;   
+            }
+            .header h1 {
+                font-size: 24px; 
+            }
+            .header p {
+                font-size: 18px; 
+            }
+        }
     </style>
 </head>
 <body>
@@ -166,15 +184,12 @@
         <div class="skills-section">
             <h3 class="section-title">Kemampuan Bidang IT</h3>
             <div class="skill" data-rating="8">
-                <span>Problem-solving</span>
-            </div>
-            <div class="skill" data-rating="8">
                 <span>C++</span>
             </div>
             <div class="skill" data-rating="9">
                 <span>HTML</span>
             </div>
-            <div class="skill" data-rating="8">
+            <div class="skill" data-rating="7">
                 <span>JavaScript</span>
             </div>
             <div class="skill" data-rating="8">
@@ -183,6 +198,9 @@
             <div class="skill" data-rating="8">
                 <span>CSS</span>
             </div>
+            <div class="skill" data-rating="5">
+                <span>UI/UX Design</span>
+            </div>
         </div>
 
         <div class="preferences-section">
@@ -190,7 +208,6 @@
             <ul>
                 <li>Bahasa Indonesia <div class="stars"> ★★★★★ </div></li>
                 <li>Bahasa Inggris <div class="stars"> ★★★★☆ </div></li>
-                <li>Bahasa Korea <div class="stars"> ★★☆☆☆ </div></li>
             </ul>
         </div>
     </div>
@@ -205,24 +222,26 @@
 
         <div class="education-section">
             <h3 class="section-title">Riwayat Pendidikan</h3>
-            <p><strong>SMA NEGERI 13 BANDAR LAMPUNG</strong> | 2020 - 2023</p>
-            <p><strong>SMP NEGERI 22 BANDAR LAMPUNG</strong> | 2017 - 2020</p>
-            <p><strong>SD NEGERI 3 LABUHAN RATU</strong> | 2011 - 2017 |</p>
+            <p><strong>SMA NEGERI 13 BANDAR LAMPUNG</strong> | 2020 - 2023 |</p>
+            <p><strong>SMP NEGERI 22 BANDAR LAMPUNG</strong> | 2017 - 2020 |</p>
+            <p><strong>SD NEGERI 3 LABUHAN RATU</strong>&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp; | 2011 - 2017 |</p>
         </div>
 
         <div class="work-experience-section">
             <h3 class="section-title">Pengalaman Organisasi</h3>
-            <p><strong>Formatif FKIP Universitas Lampung</strong> | 2023 - Sekarang</p>
-            <p><strong>PMR WiRA SMAN 13 Bandarlampung</strong> | 2020 - 2023</p>
-            <p><strong>Pramuka SMAN 13 Bandarlampung</strong> | 2020 - 2021</p>
-            <p><strong>English Club Galas Bandarlampung</strong> | 2020 - 2021</p>
+            <p><strong>Formatif FKIP Universitas Lampung</strong> | 2023 - Sekarang |</p>
+            <p><strong>PMR Wira SMAN 13 Bandarlampung</strong> | 2020 - 2023 |</p>
+            <p><strong>Pramuka SMAN 13 Bandarlampung</strong>&nbsp;&ensp;| 2020 - 2021 |</p>
+            <p><strong>English Club Galas Bandarlampung</strong> | 2020 - 2021 |</p>
         </div>
 
         <div class="portfolio-section">
             <h3 class="section-title">Hobi</h3>
-            <p><strong>Membaca Buku</strong> </p>
-            <p><strong>Mendengarkan Musik</strong> </p>
-            <p><strong>Menonton Film/Drama</strong></p>
+            <ul>
+                <li><p><strong>Membaca Buku</strong></p></li>
+                <li><p><strong>Mendengarkan Musik</strong></p></li>
+                <li><p><strong>Menonton Film/Drama</strong></p></li>
+             </ul>
         </div>
     </div>
     
@@ -242,7 +261,6 @@ document.querySelectorAll('.skill').forEach(skill => {
     }
     skill.innerHTML += `<div class="dots">${dots}</div>`;
 });
-
 </script>
 </body>
 </html>
