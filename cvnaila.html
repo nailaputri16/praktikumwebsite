@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CV Naila Ayuni Putri Ak</title>
     <style>
         body {
@@ -34,6 +34,11 @@
         .header h1 {
             margin: 0;
             font-size: 28px;
+            text-align: center;
+        }
+        .header p {
+            margin: 0;
+            font-size: 20px;
             text-align: center;
         }
         .bio-section, .profile-section, .education-section, .work-experience-section, .portfolio-section, .skills-section, .preferences-section {
@@ -116,10 +121,10 @@
             margin-left: 4px;
         }
         .filled {
-            background-color: #002147; /* Navy color */
+            background-color: #002147; 
         }
         .empty {
-            background-color: #ccc; /* Light grey for empty dots */
+            background-color: #ccc; 
         }
         footer {
             color: #f5f5f5;
@@ -130,6 +135,7 @@
         }
         footer p {
             margin: 0;
+            text-align: center;
         }
     </style>
 </head>
@@ -140,7 +146,7 @@
         <img src="foto.jpeg" alt="Profile Picture">
         <div>
             <h1>NAILA AYUNI PUTRI AK</h1>
-            <p>Mahasiswi Pendidikan Teknologi Informasi Angkatan 2023</p>
+            <p>Mahasiswi Universitas Lampung Angkatan 2023</p>
         </div>
     </div>
 
@@ -191,7 +197,7 @@
 
     <div class="main-content">
         <div class="profile-section">
-            <h3 class="section-title">Profil</h3>
+            <h3 class="section-title">Deskripsi Tentang Saya</h3>
             <p>
                 Saya adalah seorang mahasiswi aktif semester 3 Program Studi Pendidikan Teknologi Informasi. Saya tertarik dengan teknologi, terutama bagaimana teknologi dapat digunakan untuk mempermudah dalam proses belajar mengajar. Saat ini, saya sedang memperdalam pemahaman saya dalam pemrograman website, pengembangan perangkat lunak, serta penerapan teknologi dalam dunia pendidikan.
             </p>
@@ -201,7 +207,7 @@
             <h3 class="section-title">Riwayat Pendidikan</h3>
             <p><strong>SMA NEGERI 13 BANDAR LAMPUNG</strong> | 2020 - 2023</p>
             <p><strong>SMP NEGERI 22 BANDAR LAMPUNG</strong> | 2017 - 2020</p>
-            <p><strong>SD NEGERI 3 LABUHAN RATU</strong> | 2011 - 2017</p>
+            <p><strong>SD NEGERI 3 LABUHAN RATU</strong> | 2011 - 2017 |</p>
         </div>
 
         <div class="work-experience-section">
@@ -236,6 +242,7 @@ document.querySelectorAll('.skill').forEach(skill => {
     }
     skill.innerHTML += `<div class="dots">${dots}</div>`;
 });
+
 </script>
 </body>
 </html>
